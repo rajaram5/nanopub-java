@@ -35,9 +35,9 @@ public class NanopubFromTextbox {
      */
     @Test
     public void validNanopublication1() throws IOException{        
-        // See package src/test/resources for the file.
+        // See package src/test/resources/valid/nanopublication for the file.
         URL fileURL = this.getClass().
-                getResource("/validNanopublication1.trig");
+                getResource("/valid/nanopublication/nanopublication.trig");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
@@ -57,8 +57,9 @@ public class NanopubFromTextbox {
      */
     @Test
     public void validNanopublication2() throws IOException{        
-        // See package src/test/resources for the file.
-        URL fileURL = this.getClass().getResource("/validNanopublication2.nq");
+        // See package src/test/resources/valid/nanopublication for the file.
+        URL fileURL = this.getClass().
+                getResource("/valid/nanopublication/nanopublication.nq");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
@@ -78,9 +79,9 @@ public class NanopubFromTextbox {
      */
     @Test
     public void validNanopublication3() throws IOException{        
-        // See package src/test/resources for the file.
+        // See package src/test/resources/valid/nanopublication for the file.
         URL fileURL = this.getClass().
-                getResource("/validNanopublication3.trix");
+                getResource("/valid/nanopublication/nanopublication.trix");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
@@ -100,8 +101,9 @@ public class NanopubFromTextbox {
      */
     @Test
     public void validNanopublication4() throws IOException{        
-        // See package src/test/resources for the file.
-        URL fileURL = this.getClass().getResource("/validNanopublication4.xml");
+        // See package src/test/resources/valid/nanopublication for the file.
+        URL fileURL = this.getClass().
+                getResource("/valid/nanopublication/nanopublication.xml");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
@@ -122,9 +124,9 @@ public class NanopubFromTextbox {
     @Test(expected = OpenRDFException.class)
     public void inValidNanopublication1() throws IOException, 
     OpenRDFException{        
-        // See package src/test/resources for the file.
+        // See package src/test/resources/valid/nanopublication for the file.
         URL fileURL = this.getClass().
-                getResource("/validNanopublication2.nq");
+                getResource("/valid/nanopublication/nanopublication.nq");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {

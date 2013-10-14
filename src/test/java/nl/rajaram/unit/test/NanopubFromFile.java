@@ -33,9 +33,9 @@ public class NanopubFromFile {
      */
     @Test
     public void validNanopublication1() throws IOException{        
-        // See package src/test/resources for the file.
+        // See package src/test/resources/valid/nanopublication for the file.
         URL fileURL = this.getClass().
-                getResource("/validNanopublication1.trig");
+                getResource("/valid/nanopublication/nanopublication.trig");
         File file = new File(fileURL.getPath());
         try {
             NanopubImpl test = new NanopubImpl(file);
@@ -54,8 +54,9 @@ public class NanopubFromFile {
      */
     @Test
     public void validNanopublication2() throws IOException{        
-        // See package src/test/resources for the file.
-        URL fileURL = this.getClass().getResource("/validNanopublication2.nq");
+        // See package src/test/resources/valid/nanopublication for the file.
+        URL fileURL = this.getClass().
+                getResource("/valid/nanopublication/nanopublication.nq");
         File file = new File(fileURL.getPath());
         try {
             NanopubImpl test = new NanopubImpl(file);
@@ -74,9 +75,9 @@ public class NanopubFromFile {
      */
     @Test
     public void validNanopublication3() throws IOException{        
-        // See package src/test/resources for the file.
+        // See package src/test/resources/valid/nanopublication for the file.
         URL fileURL = this.getClass().
-                getResource("/validNanopublication3.trix");
+                getResource("/valid/nanopublication/nanopublication.trix");
         File file = new File(fileURL.getPath());
         try {
             NanopubImpl test = new NanopubImpl(file);
@@ -95,8 +96,9 @@ public class NanopubFromFile {
      */
     @Test
     public void validNanopublication4() throws IOException{        
-        // See package src/test/resources for the file.
-        URL fileURL = this.getClass().getResource("/validNanopublication4.xml");
+        // See package src/test/resources/valid/nanopublication for the file.
+        URL fileURL = this.getClass().
+                getResource("/valid/nanopublication/nanoPublication.xml");
         File file = new File(fileURL.getPath());
         try {
             NanopubImpl test = new NanopubImpl(file);

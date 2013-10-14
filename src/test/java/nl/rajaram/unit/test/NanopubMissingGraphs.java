@@ -36,9 +36,13 @@ public class NanopubMissingGraphs {
     @Test(expected = MalformedNanopubException.class)
     public void noNanopublicationGraph() throws MalformedNanopubException,
     IOException {
-        // See package src/test/resources for the file.
+        /**
+         * See package src/test/resources/invalid/nanopublication/nograph 
+         * for the file.
+         */
         URL fileURL = this.getClass().
-                getResource("/noNanopublicationGraph.trig");
+                getResource("/invalid/nanopublication/nograph"
+                + "/noNanopublicationGraph.trig");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
@@ -59,9 +63,13 @@ public class NanopubMissingGraphs {
     @Test(expected = MalformedNanopubException.class)
     public void noAssertionGraph() throws MalformedNanopubException,
     IOException {
-        // See package src/test/resources for the file.
+        /**
+         * See package src/test/resources/invalid/nanopublication/nograph 
+         * for the file.
+         */ 
         URL fileURL = this.getClass().
-                getResource("/noAssertionGraph.trig");
+                getResource("/invalid/nanopublication/nograph"
+                + "/noAssertionGraph.trig");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
@@ -82,9 +90,13 @@ public class NanopubMissingGraphs {
     @Test(expected = MalformedNanopubException.class)
     public void noProvenanceGraph() throws MalformedNanopubException,
     IOException {
-        // See package src/test/resources for the file.
+        /**
+         * See package src/test/resources/invalid/nanopublication/nograph 
+         * for the file.
+         */ 
         URL fileURL = this.getClass().
-                getResource("/noProvenanceGraph.trig");
+                getResource("/invalid/nanopublication/nograph"
+                + "/noProvenanceGraph.trig");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
@@ -105,9 +117,13 @@ public class NanopubMissingGraphs {
     @Test(expected = MalformedNanopubException.class)
     public void noPublicationInfoGraph() throws MalformedNanopubException,
     IOException {
-        // See package src/test/resources for the file.
+        /**
+         * See package src/test/resources/invalid/nanopublication/nograph 
+         * for the file.
+         */ 
         URL fileURL = this.getClass().
-                getResource("/noPublicationInfoGraph.trig");
+                getResource("/invalid/nanopublication/nograph"
+                + "/noPublicationInfoGraph.trig");
         String content = FileOperation.readFile(fileURL.getPath(), 
                 StandardCharsets.UTF_8);
         try {
